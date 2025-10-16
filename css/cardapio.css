@@ -1,146 +1,119 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #fffdf8;
-    color: #3e2a1d;
+  font-family: 'Poppins', sans-serif;
+  background: #fffdf8;
+  color: #3a2a1d;
 }
 
 header {
-    width: 100%;
-    height: 70px;
-    background: #4e3620;
+  background: #4e3620;
+  height: 70px;
+  display: flex;
+  align-items: center;
 }
 
 .menu {
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
 }
 
 .logo {
-    font-size: 2rem;
-    color: #fff;
-    font-weight: bold;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 
-.header-menu .lista {
-    display: flex;
-    list-style: none;
-    gap: 20px;
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
 }
 
-.header-menu .lista a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.4rem;
-    position: relative;
-    padding: 10px 0;
-    text-transform: uppercase;
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
 }
 
-.header-menu .lista a::before {
-    content: ' ';
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 0px;
-    height: 2px;
-    background-color: #fff;
-    transition: all 0.5s ease;
-}
-
-.header-menu .lista a:hover::before {
-    width: 100%;
-    background-color: #b88b5d;
+.nav-links a:hover {
+  color: #d8b88a;
 }
 
 main {
-    padding: 60px 20px;
-    text-align: center;
+  text-align: center;
+  padding: 50px 20px;
 }
 
 main h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    color: #4e3620;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #4e3620;
 }
 
-.cardapio-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
 }
 
 .card {
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    width: 240px;
-    padding-bottom: 15px;
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: scale(1.03);
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 220px;
+  padding-bottom: 15px;
 }
 
 .card img {
-    width: 100%;
-    height: 160px;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    object-fit: cover;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .card h3 {
-    font-size: 1.6rem;
-    margin: 10px 0 5px;
-}
+  font-size: 1.1rem;
+  margin: 10px 0 5px;
 
-.card p {
-    font-size: 1.2rem;
-    margin: 0 10px 15px;
-    color: #5c4a3a;
 }
 
 .card span {
-    display: block;
-    font-size: 1.4rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: #4e3620;
+  font-weight: 600;
+  color: #4e3620;
+  display: block;  margin-bottom: 10px;
 }
 
 .card button {
-    background-color: #b88b5d;
-    color: white;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 6px;
-    font-size: 1.3rem;
-    cursor: pointer;
-    transition: 0.3s;
+  background: #b88b5d;
+  border: none;
+  color: #fff;
+  padding: 7px 12px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .card button:hover {
-    background-color: #a37447;
+  background: #9f7449;
 }
 
 footer {
-    background-color: #b88b5d;
-    color: #fff;
-    text-align: center;
-    padding: 15px 0;
-    font-size: 1.3rem;
-    margin-top: 50px;
+  background: #b88b5d;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+  margin-top: 40px;
 }
