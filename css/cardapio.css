@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffdf8;
+    color: #3e2a1d;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background: #4e3620;
+}
+
+.menu {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.header-menu .lista {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.header-menu .lista a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4rem;
+    position: relative;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.header-menu .lista a::before {
+    content: ' ';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.5s ease;
+}
+
+.header-menu .lista a:hover::before {
+    width: 100%;
+    background-color: #b88b5d;
+}
+
+main {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #4e3620;
+}
+
+.cardapio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 240px;
+    padding-bottom: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 1.6rem;
+    margin: 10px 0 5px;
+}
+
+.card p {
+    font-size: 1.2rem;
+    margin: 0 10px 15px;
+    color: #5c4a3a;
+}
+
+.card span {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #4e3620;
+}
+
+.card button {
+    background-color: #b88b5d;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card button:hover {
+    background-color: #a37447;
+}
+
+footer {
+    background-color: #b88b5d;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1.3rem;
+    margin-top: 50px;
+}
